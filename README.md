@@ -1,19 +1,26 @@
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:30204F,50:60458A,100:9B72CF&height=200&section=header&text=Intelligent%20Warehouse%20System&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Inventory%20Management%20Application&descAlignY=58&descSize=17)
+
+<div align="center">
+
 # Intelligent Warehouse & Inventory Management System
 
-\<p align="center">   \<img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white](https://img.shields.io/badge/Django-092E20?style=for-the-badge\&logo=django\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)" />   \<img src="[https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)" /> \</p>
+**A Web-Based Application for Efficient Warehouse and Inventory Management**
 
-\<p align="center">   \<strong>A Web-Based Application for Efficient Warehouse and Inventory Management\</strong> \</p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-\<p align="center">
-&#x20; \<a href="[https://github.com/Seenu-vasanR/IntelligentWarehouseSystem](https://github.com/Seenu-vasanR/IntelligentWarehouseSystem)">
-&#x20;   \<img src="[https://img.shields.io/badge/GitHub-View%20Project-181717?style=flat-square&logo=github](https://img.shields.io/badge/GitHub-View%20Project-181717?style=flat-square\&logo=github)" />
-&#x20; \</a>
-&#x20; \<img src="[https://img.shields.io/badge/Project-Inventory%20Management-6A5ACD?style=flat-square](https://img.shields.io/badge/Project-Inventory%20Management-6A5ACD?style=flat-square)" />
-\</p>
+![Project](https://img.shields.io/badge/Project-Inventory%20Management-8A2BE2?style=flat-square)
+![Framework](https://img.shields.io/badge/Framework-Django-228B22?style=flat-square)
+![Database](https://img.shields.io/badge/Database-MySQL-00758F?style=flat-square)
+
+</div>
 
 ---
 
-## 🟣 Project Overview
+## 🟣 About The Project
 
 The **Intelligent Warehouse & Inventory Management System** is a web-based application developed using Python and Django to simplify warehouse operations and inventory tracking.
 
@@ -33,13 +40,13 @@ The application enables users to manage products, categories, suppliers, and sto
 
 ## 🟢 Technology Stack
 
-| Technology | Purpose                |
-| ---------- | ---------------------- |
-| 🐍 Python  | Backend Programming    |
-| 🌐 Django  | Web Framework          |
-| 🗄️ MySQL  | Database Management    |
-| 🧱 HTML    | Frontend Structure     |
-| 🎨 CSS     | User Interface Styling |
+| Technology | Purpose |
+|---|---|
+| 🐍 Python | Backend Programming |
+| 🌐 Django | Web Framework |
+| 🗄️ MySQL | Database Management |
+| 🧱 HTML | Frontend Structure |
+| 🎨 CSS | User Interface Styling |
 
 ## 🟠 Project Modules
 
@@ -49,7 +56,7 @@ The application enables users to manage products, categories, suppliers, and sto
 4. Supplier Management
 5. Stock Movement Management
 
-## ⚙️ Installation and Setup
+## 🟡 Installation & Setup
 
 **1. Clone the repository**
 
@@ -70,29 +77,29 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-**4. Install the required packages**
+**4. Install dependencies**
 
 ```bash
 pip install Django PyMySQL python-dotenv
 ```
 
-**5. Configure the MySQL database**
+**5. Configure MySQL**
 
-Create a MySQL database named `intelligent_warehouse` and configure the database credentials in your local `.env` file.
+Create a MySQL database named `intelligent_warehouse` and configure your database credentials in a local `.env` file.
 
-**6. Apply database migrations**
+**6. Apply migrations**
 
 ```bash
 python manage.py migrate
 ```
 
-**7. Start the development server**
+**7. Run the development server**
 
 ```bash
 python manage.py runserver
 ```
 
-Open the application in your browser:
+Open your browser:
 
 `http://127.0.0.1:8000/`
 
@@ -102,29 +109,27 @@ Open the application in your browser:
 
 ### Seenuvasan R.
 
-**B.Sc. Computer Science Graduate**
+🎓 B.Sc. Computer Science Graduate
 
 📍 Tamil Nadu, India
 
-## 📬 Connect With Me
+## 🔗 Connect With Me
 
-\<p align="left">
-&#x20; \<a href="mailto\:your-email\@example.com">
-&#x20;   \<img src="[https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge\&logo=gmail\&logoColor=white)" />
-&#x20; \</a>
-&#x20; \<a href="[https://github.com/Seenu-vasanR](https://github.com/Seenu-vasanR)">
-&#x20;   \<img src="[https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge\&logo=github\&logoColor=white)" />
-&#x20; \</a>
-&#x20; \<a href="[https://www.linkedin.com/in/seenuvasanr/](https://www.linkedin.com/in/seenuvasanr/)">
-&#x20;   \<img src="[https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)" />
-&#x20; \</a>
-\</p>
+[![GitHub](https://img.shields.io/badge/GitHub-Visit%20Profile-181717?style=for-the-badge&logo=github)](https://github.com/Seenu-vasanR)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20With%20Me-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/seenuvasanr/)
+
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail)](mailto:your-email@example.com)
 
 ---
 
-\<p align="center">
-&#x20; \<strong>Thank you for visiting my project!\</strong>
-\</p>
-\<p align="center">
-&#x20; \<sub>Developed to demonstrate web application development, database management, and inventory management concepts.\</sub>
-\</p>
+<div align="center">
+
+**Thank You for Visiting My Project!**
+
+⭐ Feel free to explore the repository.
+
+</div>
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:30204F,50:60458A,100:9B72CF&height=100&section=footer)
+
