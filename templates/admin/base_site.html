@@ -1,0 +1,255 @@
+
+{% extends "admin/base.html" %}
+
+{% block title %}Warehouse Management System{% endblock %}
+
+{% block branding %}
+<div class="warehouse-brand">
+    <h1 id="site-name">Warehouse Admin Dashboard</h1>
+    <a href="/" class="warehouse-home-btn">⌂ Home</a>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+
+<style>
+
+/* MAIN THEME */
+:root {
+    --dark-purple: #30204F;
+    --main-purple: #60458A;
+    --medium-purple: #49316F;
+    --light-purple: #8B70B5;
+    --text-light: #FFFFFF;
+    --soft-lavender: #E5D8FF;
+}
+
+/* ALL PAGE BACKGROUND */
+html, body, #container, #main, #content,
+#content-main, #content-related,
+#changelist, #changelist-form,
+.module, .inline-group {
+    background: var(--main-purple) !important;
+    color: var(--text-light) !important;
+}
+
+/* HEADER */
+#header {
+    background: var(--dark-purple) !important;
+    padding: 20px 25px !important;
+}
+
+.warehouse-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+#branding h1, #site-name {
+    color: white !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+}
+
+.warehouse-home-btn {
+    background: var(--main-purple);
+    color: white !important;
+    padding: 10px 22px;
+    border: 1px solid var(--light-purple);
+    border-radius: 7px;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.warehouse-home-btn:hover {
+    background: var(--light-purple);
+}
+
+#user-tools, #user-tools a {
+    color: white !important;
+}
+
+/* PAGE CONTENT */
+#content {
+    padding: 25px !important;
+}
+
+#content-main {
+    width: 100%;
+}
+
+/* MODULE CARDS */
+.module, .inline-group, #changelist {
+    border: 1px solid var(--light-purple) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    margin-bottom: 22px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+}
+
+/* SECTION HEADINGS */
+.module caption,
+.module h2,
+.inline-group h2,
+#changelist .results {
+    background: var(--dark-purple) !important;
+    color: white !important;
+    padding: 15px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.module caption a,
+.module h2 a {
+    color: white !important;
+}
+
+/* TABLE HEADINGS */
+#content th,
+#changelist th,
+.results th {
+    background: var(--medium-purple) !important;
+    color: white !important;
+    padding: 13px !important;
+}
+
+/* TABLE CELLS */
+#content td,
+#changelist td {
+    background: var(--main-purple) !important;
+    color: white !important;
+    padding: 12px !important;
+    border-color: var(--light-purple) !important;
+}
+
+#content td a,
+#changelist td a {
+    color: var(--soft-lavender) !important;
+    font-weight: bold;
+}
+
+/* FORMS AND INPUTS */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+input[type="datetime-local"],
+input[type="date"],
+select,
+textarea {
+    background: #49316F !important;
+    color: white !important;
+    border: 1px solid #A58BCB !important;
+    border-radius: 6px !important;
+    padding: 9px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #D8C8F0 !important;
+}
+
+label, .help, .helptext, p {
+    color: white !important;
+}
+
+/* LINKS */
+a:link, a:visited {
+    color: var(--soft-lavender);
+}
+
+/* BUTTONS */
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+button {
+    background: var(--dark-purple) !important;
+    color: white !important;
+    border: 1px solid var(--light-purple) !important;
+    border-radius: 7px !important;
+    padding: 9px 16px !important;
+    font-weight: bold !important;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+button:hover {
+    background: var(--light-purple) !important;
+}
+
+/* BREADCRUMBS */
+.breadcrumbs {
+    background: var(--medium-purple) !important;
+    color: white !important;
+    padding: 12px 20px !important;
+}
+
+.breadcrumbs a {
+    color: white !important;
+}
+
+/* FILTER PANEL */
+#changelist-filter {
+    background: var(--main-purple) !important;
+    border-left: 1px solid var(--light-purple) !important;
+}
+
+#changelist-filter h2 {
+    background: var(--dark-purple) !important;
+    color: white !important;
+    padding: 12px !important;
+}
+
+#changelist-filter h3,
+#changelist-filter li,
+#changelist-filter a {
+    color: white !important;
+}
+
+/* RECENT ACTIONS */
+#content-related {
+    width: 230px !important;
+    background: var(--main-purple) !important;
+    border: 1px solid var(--light-purple) !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    color: white !important;
+}
+
+#content-related h2 {
+    background: var(--dark-purple) !important;
+    color: white !important;
+    padding: 12px !important;
+    border-radius: 7px;
+}
+
+#content-related h3,
+#content-related li,
+#content-related .mini {
+    color: white !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    #content {
+        padding: 12px !important;
+    }
+
+    .warehouse-brand {
+        flex-wrap: wrap;
+    }
+
+    #content-related {
+        width: 100% !important;
+    }
+}
+
+</style>
+{% endblock %}
